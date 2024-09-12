@@ -1,0 +1,73 @@
+.header{
+    // вертикальные внутренние отступы для всего headera
+    padding-top: 21px;
+    padding-bottom: 22px;
+
+    &__top{
+        // горизонтальные отступы верхнего контейнера
+        padding-left: 28px;
+        padding-right: 51px;
+        padding-bottom: 19px;
+
+        // позиционирование элементов внутри верхнего контейнера + внутри details + внутри list 
+        // я хз хороший ли тон ли так растягивать селектор, но помоему это лучше чем дублировать те же самые св-ва :)
+        &__container,
+        &__details,
+        &__list,
+        &__actions,
+        &__btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        // расстояние между элементами details
+        &__details{
+            column-gap: 47px;
+        }
+
+        // расстояние между элементами list
+        &__list{
+            column-gap: 32px;
+        }
+
+         // расстояние между элементами actions
+        &__actions{
+            column-gap: 16px;
+        }
+
+        // стили svg кнопок в header
+        &__btn{
+            @include reset-btn;
+
+            color: var(--color-dark-primary);
+
+            @include hover{
+                cursor: pointer;
+                opacity: .7;
+            }
+        }
+    }
+
+    &__link{
+        @include hover{
+            color: var(--color-dark-primary);
+        }
+    }
+    
+    &__bottom{
+        // отступы нижнего контейнера
+        padding: 22px 318px;
+        background-color: var(--color-light-gray);
+
+        // позиционирование внутри списка
+        &__list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 44px;
+        }
+    }
+
+
+}

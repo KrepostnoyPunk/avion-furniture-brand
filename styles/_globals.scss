@@ -1,0 +1,39 @@
+body{
+    font-family: var(--font-main);
+    font-weight: 400;
+
+    @include elastic-text(14, 16);
+
+    line-height: 21px;
+    color: var(--color-dark-primary);
+    background-color: var(--color-white);
+}
+
+a,
+button,
+textarea,
+input,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-light-primary)
+}
+
+h1, .h1{
+    @include elastic-text(32, 36);
+}
+
+h2, .h2{
+    @include elastic-text(32, 32);
+}
+
+h3, .h3{
+    @include elastic-text(20, 24);
+}
+
+h4, .h4{
+    @include elastic-text(16, 20);
+}
