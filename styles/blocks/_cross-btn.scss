@@ -1,0 +1,27 @@
+.cross-btn{
+    @include reset-btn;
+    @include square(32px);
+
+    position: relative;
+
+    // общие стили для before и after
+    &::before,
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50;
+        left: 7px;
+        width: 70%;
+        height: 2px;
+        background-color: var(--color-dark-primary);
+        border-radius: 2px;
+    }
+
+    &::before{
+        rotate: 45deg;
+    }
+
+    &::after{
+        rotate: -45deg;
+    }
+}

@@ -1,0 +1,16 @@
+.burger__btn{
+    @include square(32px);
+
+    position: relative;
+
+    &::after{
+        @include absolute-center;
+
+        content: '';
+        width: 50%;
+        height: 1px;
+        background-color: var(--color-dark-primary);
+        border-radius: 2px;
+        box-shadow: 0 -8px, 0 8px;
+    }
+}

@@ -9,6 +9,12 @@
         padding-right: 51px;
         padding-bottom: 19px;
 
+        // media
+        @include mobile{
+            padding-left: 24px;
+            padding-right: 27px;
+        }
+
         // позиционирование элементов внутри верхнего контейнера + внутри details + внутри list 
         // я хз хороший ли тон ли так растягивать селектор, но помоему это лучше чем дублировать те же самые св-ва :)
         &__container,
@@ -24,6 +30,11 @@
         // расстояние между элементами details
         &__details{
             column-gap: 47px;
+
+            // media
+            @include mobile{
+                column-gap: 20px;
+            }
         }
 
         // расстояние между элементами list
@@ -34,6 +45,11 @@
          // расстояние между элементами actions
         &__actions{
             column-gap: 16px;
+
+            // media
+            @include mobile{
+                column-gap: 20px;
+            }
         }
 
         // стили svg кнопок в header

@@ -1,0 +1,18 @@
+.btn{
+    height: var(--input-and-btn-medium--height);
+    padding: var(--btn-padding-x-y);
+
+    
+
+    &--primary--alt{
+        background-color: var(--color-anotha-xyi-znaet-kakoi-primary-light);
+        max-width: 170px;
+        width: 100%;
+        color: var(--color-white);
+
+        @include hover{
+            background-color: var(--color-white);
+            color: var(--color-dark-primary);
+        }
+    }
+}

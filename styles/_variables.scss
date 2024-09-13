@@ -3,6 +3,7 @@
     --color-dark-primary: #2A254B;
     --color-primary: #4E4D93;
     --color-dark-primary-alt: #4A4566;
+    --color-anotha-xyi-znaet-kakoi-primary-light: #494465;
     --color-light-primary: #726E8D;
     --color-light-dark-primary: #505977;
     --color-light-gray: #F9F9F9;
@@ -24,9 +25,13 @@
     // горизонтальные отступы контейнера
     --container-padding-x: 80px;
 
+    // отступы внутри кнопок
+    --btn-padding-x-y: 16px 32px;
+
     // высоты элементов
     --input-and-btn-medium--height: 56px;
-    --btn-small-height: 48px
+    --btn-small-height: 48px; 
+    // #ЯЕБАЛЭТИВАШИ ;;;;;;;;;;;
 
     // длительность анимции
     --transition-duration: .3s;
