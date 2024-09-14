@@ -1,6 +1,12 @@
 .hero {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+
+    // media
+    @include tablet{
+        flex-direction: column;
+    }
 
     background-color: var(--color-dark-primary);
     color: var(--color-white);
@@ -11,14 +17,13 @@
 
         max-width: 760px;
         width: 100%;
+        height: auto;
 
         padding: 60px 98px 60px 60px;
 
         a {
             margin-bottom: 196px;
         }
-
-        min-height: 584px;
 
         @include desktop{
             padding: 30px 30px 30px 30px;
@@ -29,31 +34,19 @@
         margin-bottom: 41px;
         max-width: 513px;
         width: 100%;
-
-        @include desktop{
-            max-width: 260px;
-        }
     }
 
     &__description{
         max-width: 602px;
         width: 100%;
-
-        @include desktop{
-            max-width: 260px;
-        }
     }
 
     &__img{
-        max-width: 520px;
-        width: 100%;
-        height: auto;
+       min-height: 668px;
         
-
-        @include desktop{
-            width: 80%;
-            height: 100%;
-            object-fit: contain;
-        }
+    // media
+    @include tablet{
+        // надо поменять порядок элементов
+    }
     }
 }
